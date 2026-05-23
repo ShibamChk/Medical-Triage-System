@@ -164,12 +164,12 @@ def main():
     # -----------------------------
     # Training configuration
     # -----------------------------
-    model_name = "resnet50"
+    model_name = "convnext_tiny"
     num_classes = 3
     pretrained = True
     freeze_backbone = False
 
-    batch_size = 16
+    batch_size = 8
     num_epochs = 20
     early_stopping_patience = 5
     min_delta = 1e-4

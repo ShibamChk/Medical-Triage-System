@@ -130,7 +130,7 @@ def parse_args():
         "--model-name",
         type=str,
         default="resnet50",
-        choices=["resnet50"],
+        choices=["resnet50", "convnext_tiny"],
         help="Model architecture to evaluate.",
     )
 
