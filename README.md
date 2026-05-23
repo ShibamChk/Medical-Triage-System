@@ -96,6 +96,40 @@ Streamlit Demo + FastAPI Inference API
 
 ---
 
+## Visual Results
+
+### ConvNeXt-Tiny Confusion Matrix
+![ConvNeXt Confusion Matrix](reports/figures/confusion_matrix_convnext_tiny_safe.png)
+
+### Threshold Tuning Curve
+![Threshold Curve](reports/figures/threshold_curve_convnext_tiny_threshold_tuned.png)
+
+### High-Sensitivity Triage Confusion Matrix
+![Tuned Confusion Matrix](reports/figures/confusion_matrix_tuned_normalized_convnext_tiny_threshold_tuned.png)
+
+### Grad-CAM Explainability Gallery
+![Grad-CAM Gallery](reports/figures/convnext_tiny_gradcam_gallery.png)
+
+---
+
+## Demo Interfaces
+
+### Streamlit Demo
+
+The Streamlit app allows users to upload a chest X-ray image, run inference, choose between balanced and high-sensitivity triage mode, view class probabilities, and generate Grad-CAM explanations.
+
+![Streamlit Demo 1](reports/figures/streamlit_demo_1.png)
+
+![Streamlit Demo 2](reports/figures/streamlit_demo_2.png)
+
+### FastAPI Inference API
+
+The FastAPI endpoint provides production-style model serving through REST API endpoints. It supports health checks, model information, and file-based prediction through Swagger UI.
+
+![FastAPI Swagger Docs](reports/figures/fastapi_docs.png)
+
+---
+
 medtriage-cxr/
 ├── app/
 │   ├── streamlit_app.py
